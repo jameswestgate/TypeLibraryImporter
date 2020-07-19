@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1EE43A06-F8B8-4724-AAF2-DE29D24F544A}"
 EndProject
@@ -141,42 +141,7 @@ Global
 		{CFC5A366-641A-4EAD-818A-A792123E8A21} = {1EE43A06-F8B8-4724-AAF2-DE29D24F544A}
 		{9D153819-A374-4D70-9E89-5D92B6D59278} = {1EE43A06-F8B8-4724-AAF2-DE29D24F544A}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs07
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = AssemblyTreeView\\AssemblyTreeViewer.csproj
-		SccProjectTopLevelParentUniqueName1 = TlbImp2.sln
-		SccProjectName1 = AssemblyTreeView
-		SccLocalPath1 = AssemblyTreeView
-		SccProjectUniqueName2 = coreRuleEngine\\CoreRuleEngine.csproj
-		SccProjectTopLevelParentUniqueName2 = TlbImp2.sln
-		SccProjectName2 = coreRuleEngine
-		SccLocalPath2 = coreRuleEngine
-		SccProjectUniqueName3 = TlbImp\\TlbImp2.csproj
-		SccProjectTopLevelParentUniqueName3 = TlbImp2.sln
-		SccProjectName3 = TlbImp
-		SccLocalPath3 = TlbImp
-		SccProjectUniqueName4 = TlbImpRegressionTestTool\\TlbImpRegressionTestTool.csproj
-		SccProjectTopLevelParentUniqueName4 = TlbImp2.sln
-		SccProjectName4 = TlbImpRegressionTestTool
-		SccLocalPath4 = TlbImpRegressionTestTool
-		SccProjectUniqueName5 = tlbImpRuleEngine\\TlbImpRuleEngine.csproj
-		SccProjectTopLevelParentUniqueName5 = TlbImp2.sln
-		SccProjectName5 = tlbImpRuleEngine
-		SccLocalPath5 = tlbImpRuleEngine
-		SccProjectUniqueName6 = TlbImpRuleFileEditor\\TlbImpRuleFileEditor.csproj
-		SccProjectTopLevelParentUniqueName6 = TlbImp2.sln
-		SccProjectName6 = TlbImpRuleFileEditor
-		SccLocalPath6 = TlbImpRuleFileEditor
-		SccProjectUniqueName7 = TypeLibraryViewer\\TypeLibraryTreeView.csproj
-		SccProjectTopLevelParentUniqueName7 = TlbImp2.sln
-		SccProjectName7 = TypeLibraryViewer
-		SccLocalPath7 = TypeLibraryViewer
-		SccProjectUniqueName8 = typelibTypes.interop\\TypeLibTypes.Interop.csproj
-		SccProjectTopLevelParentUniqueName8 = TlbImp2.sln
-		SccProjectName8 = typelibTypes.interop
-		SccLocalPath8 = typelibTypes.interop
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CEC4A4E-61F6-4E74-B8B2-9605925ACAA7}
 	EndGlobalSection
 EndGlobal

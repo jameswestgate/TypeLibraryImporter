@@ -1,0 +1,23 @@
+Ensure .net framework 3.5 is isntalled / or rebuild tlbimp2 see below
+
+See https://syfuhs.net/2017/10/15/creating-custom-windows-credential-providers-in-net/
+See also https://stackoverflow.com/questions/36425318/windows-credential-provider-in-c-sharp
+
+You may need to get a recompiled version of tlbimp2 ... https://github.com/clrinterop/TypeLibraryImporter
+
+Open vs developer command prompt as administrator
+
+1. midl "C:\Users\James\Documents\SecOne Software\SecOne.CredentialProvider\midl updated\credentialprovider.idl" -target NT62 /x64 -out "C:\Users\James\Documents\SecOne Software\SecOne.CredentialProvider\midl updated"
+
+2. cd to "C:\Users\James\Documents\SecOne Software\SecOne.CredentialProvider\midl updated"
+
+
+3. TlbImp2.exe credentialprovider.tlb /out:Authlogics.CredentialProvider.Interop.dll /unsafe /verbose /preservesig namespace:Authlogics.CredentialProvider
+
+Avoid the /verbose flag to skip the warnings about badimageformat
+
+
+"C:\Users\James\Documents\SecOne Software\SecOne.CredentialProvider\midl updated\credentialprovider.tlb" /out:"C:\Users\James\Documents\SecOne Software\SecOne.CredentialProvider\midl updated\Authlogics.WinDLA.CredentialProvider.Interop.dll" /unsafe /preservesig namespace:Authlogics.WinDLA.CredentialProvider.Interop /asmversion:4.1.0.0 /product:"Authlogics Windows Desktop Logon Agent" /productversion:4.1.0.0 /company:"Authlogics" /copyright:"Copyright © 2007-2020 Authlogics. All rights reserved." /keyfile:"C:\Users\James\Documents\SecOne Software\SecOne.CredentialProvider\midl updated\Authlogics.snk"
+
+
+"C:\Users\James\Documents\SecOne Software\SecOne.CredentialProvider\midl updated\credentialprovider.tlb" /out:"C:\Users\James\Documents\SecOne Software\SecOne.CredentialProvider\midl updated\SecOne.CredentialProvider.Interop.dll" /unsafe /preservesig namespace:SecOne.CredentialProvider.Interop /asmversion:1.0.0  /product:"SecOne Secure Desktop" /productversion:1.0 /company:"SecOne Security Ltd"  /copyright:"SecOne Security Ltd 2020"

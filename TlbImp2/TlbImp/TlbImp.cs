@@ -143,6 +143,9 @@ internal class TlbImp
             retCode = ErrorReturnCode;
         }
 
+        Console.WriteLine("Press any key to exit");
+        Console.ReadKey();
+
         return retCode;
     }
 
